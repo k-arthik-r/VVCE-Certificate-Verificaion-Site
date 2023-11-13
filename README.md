@@ -66,3 +66,8 @@ Python 3.11.1 (Recommended)
 ```
 -------------------------
 
+## How the Website?
+
+The Webpage takes Reference ID (It is Printed on the Certificate) as Input form the User and Validates the ID. If the ID is Valid it will display the Name and Contribution of the User Along with the Event Name.
+If the ID is Invalid, it will Display an Error Message stating ID is Invalid.
+
