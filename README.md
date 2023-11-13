@@ -73,6 +73,17 @@ If the ID is Invalid, it will Display an Error Message stating ID is Invalid.
 
 ![Image](https://github.com/k-arthik-r/VVCE-Certificate-Verificaion-Site/assets/111432615/cee30172-9be6-4d0f-b35b-6cf09fa4980e)
 
+----------------------------
+
+## License
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
+----------------------------
+
+## Feedback
+If you have any feedback, please reach out to us at voidex.developer@gmail.com .
+You are also welcomed to add new features by creating Pull Requests.
 
 
 
