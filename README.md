@@ -66,9 +66,9 @@ Python 3.11.1 (Recommended)
 ```
 -------------------------
 
-## How the Website?
+## How the Website Works?
 
-The Webpage takes Reference ID (It is Printed on the Certificate) as Input form the User and Validates the ID. If the ID is Valid it will display the Name and Contribution of the User Along with the Event Name.
+The Webpage takes Reference ID (It is Printed on the Certificate) as Input form the User and Validates the ID. If the ID is Valid, it will display the Name and Contribution of the User Along with the Event Name.
 If the ID is Invalid, it will Display an Error Message stating ID is Invalid.
 
 ![Image](https://github.com/k-arthik-r/VVCE-Certificate-Verificaion-Site/assets/111432615/cee30172-9be6-4d0f-b35b-6cf09fa4980e)
