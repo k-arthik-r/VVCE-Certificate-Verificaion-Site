@@ -16,3 +16,53 @@
 
 ------------------------
 
+This Repository Contains the Code for a website built for Vidyavardhaka College of Engineering that verifies the Certificates Received as the part of the Institution by Validating the Certificate Reference ID. Its a Dynamic website Buits using HTML, CSS, Java Script, Python( Flask ) and Hosted using Azure web Services. Its data is Maintained in Mongo DB.
+
+------------------------
+
+## Requirments
+Python 3.11.1 (Recommended) 
+
+<a href="https://www.python.org/downloads/" alt="3.11.1">
+        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
+  
+<h4>Modules Required</h4>
+
+- flask
+- pymongo
+- configparser
+
+--------------------------
+## How to Run?
+
+- Intialize a Git Repository.
+```bash
+  git init
+```
+
+- Clone the Current Git Repository.
+```bash
+  git clone https://github.com/k-arthik-r/VVCE-Certificate-Verificaion-Site.git
+```
+
+- Crete a Virtual Environment named env and Activate it(PowerShell)
+```bash
+  python -m venv env
+
+  .\env\Scripts\Activate.ps1
+```
+
+- Install all the Modules Present in [requirements](requirements.txt)
+```bash
+  pip install -r requirements.txt
+```
+
+- Give The Appropriate Mongo DB Credentials in [config](config.ini)
+
+- After Importing all the mentioned modules, Run [app](app.py)
+  
+```bash
+  python app.py
+```
+-------------------------
+
