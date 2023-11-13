@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVCE</title>
+    <link rel="icon"  type="image/x-icon"  href="{{ url_for('static', filename='icon.png') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <section>
+        <div class="login-box">
+            <form action="/verify" method="post">
+                <div style="display: flex; justify-content: center; align-items: center; margin: auto;">
+                    <img src="{{url_for('static', filename='icon.png')}}" alt="*" style="height: 90px; width: 90px;">
+                </div>
+                <h2>VVCE Verifications</h2>
+                <div class="input-box">
+                    <input type="text" id="refid" name="refid" autocomplete="off" required>
+                    <label>Enter your Reference ID</label>
+                    <!-- # Name is required for app.py -->
+                </div>
+                <div class="flex_justy_between">
+                    <input type="submit" value="Save">
+                    <input type="button" value="Clear" onclick="clearForm()">
+                </div>
+                <div class="margin-top">
+                    {% if message %}
+                        {% if success %}
+                        <p style="color: white; word-wrap: break-word; display: inline-flex; align-items: center;">
+                            <img src="{{ url_for('static', filename='verified.png') }}" alt="**" style="height: 30px; width: 30px;">
+                            <b style="margin-left: 5px;">Verified</b>
+                        </p>
+                        <p style="color: white; word-wrap: break-word;"><b>{{message}}</b></p>
+                        {% else %}
+                        <p style="color: red; word-wrap: break-word; display: inline-flex; align-items: center;">
+                            <img src="{{ url_for('static', filename='cross.png') }}" alt="**" style="height: 20px; width: 20px;">
+                            <b style="margin-left: 5px;">{{ message }}</b>
+                        </p>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+
+</html>

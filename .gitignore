@@ -1,0 +1,4 @@
+/env
+/.vscode
+/.ebextensions
+/__pycache__
