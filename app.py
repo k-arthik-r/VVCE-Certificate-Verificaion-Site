@@ -6,8 +6,6 @@ app = Flask(__name__)
 config = ConfigParser()
 config.read('config.ini')
 
-print(config.sections())
-
 client = pymongo.MongoClient(config['connection']['connection_string'])
 db = client[config['database']['db_name']]
 collection = db[config['database']['collection_name']]
